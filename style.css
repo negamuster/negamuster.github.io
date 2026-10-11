@@ -30,7 +30,3 @@ hr{border:0;border-top:3px solid #ccc;margin-top:2px;margin-bottom:15px}
 .about-heading{padding-top:60px}
 .interest-image{width:180px;height:135px}
 .contact{padding:0 20px 40px}
-@media(max-width:600px){
-.profile{display:flex;flex-direction:column}.intro,.photo-cell{display:block;width:auto;padding:20px}.photo-cell{order:-1;width:180px;padding-bottom:0}.intro{padding-top:0}.intro h1{padding-top:12px}.bio,.description p{text-align:left}
-.work{display:grid;grid-template-columns:110px 1fr}.image-cell,.description{display:block;width:auto;padding:16px 12px}.image-cell{padding-left:20px}.placeholder,.interest-image{width:80px;height:90px}.placeholder span{font-size:19px}.placeholder small{font-size:9px;text-align:center}.section-heading,.text-section{padding-left:20px;padding-right:20px}.about-heading{padding-top:40px}.profile-links{line-height:1.8}.contact a{overflow-wrap:anywhere}
-}
