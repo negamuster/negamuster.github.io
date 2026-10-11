@@ -33,3 +33,12 @@ hr{border:0;border-top:3px solid #ccc;margin-top:2px;margin-bottom:15px}
 
 .rocket-mark{display:block;width:30%;max-width:140px;height:auto;margin:12px auto 0}
 @media(prefers-reduced-motion:reduce){.rocket-mark{visibility:hidden}}
+
+.company-logo{display:block;width:160px;max-width:100%;height:auto;margin:0 auto}
+.intel-logo{width:120px}
+.logo-credit{display:block;text-align:center;font-size:9px;color:#777;margin-top:6px}
+.experience-entry{margin:18px 0 26px}
+.experience-entry:last-child{margin-bottom:0}
+.experience-entry p{margin:6px 0}
+.entry-heading{display:flex;justify-content:space-between;align-items:baseline;gap:16px}
+.entry-date{white-space:nowrap;font-weight:700}
