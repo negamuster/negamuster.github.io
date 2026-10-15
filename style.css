@@ -42,3 +42,5 @@ hr{border:0;border-top:3px solid #ccc;margin-top:2px;margin-bottom:15px}
 .experience-entry p{margin:6px 0}
 .entry-heading{display:flex;justify-content:space-between;align-items:baseline;gap:16px}
 .entry-date{white-space:nowrap;font-weight:700}
+
+.project-thumbnail{display:block;width:160px;max-width:100%;height:auto;margin:0 auto}
