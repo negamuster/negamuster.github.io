@@ -28,7 +28,8 @@ hr{border:0;border-top:3px solid #ccc;margin-top:2px;margin-bottom:15px}
 .placeholder span{font-size:24px}.placeholder small{font-size:11px;margin-top:7px}
 .pending{color:#777}
 .about-heading{padding-top:60px}
-.interest-image{width:180px;height:135px}
+.about-row{table-layout:auto}
+.interest-image{display:block;width:180px;height:auto}
 .contact{padding:0 20px 40px}
 
 .rocket-mark{display:block;width:30%;max-width:140px;height:auto;margin:12px auto 0}
