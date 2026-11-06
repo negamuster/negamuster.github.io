@@ -28,6 +28,16 @@
 <meta name="twitter:image" content="https://negamuster.github.io/images/profile-share-v1.png">
 <meta name="twitter:image:alt" content="Yechan Lee, Finance Student at Stony Brook University, with a portrait and research interests.">
 <link rel="stylesheet" href="style.css?v=20261015-about">
+<style>
+.certification-row{display:flex;align-items:center;gap:18px}
+.certificate-preview{flex:0 0 auto;cursor:zoom-in}
+.certificate-preview img{display:block;width:105px;height:auto;border:1px solid #ddd;border-radius:4px}
+.certificate-dialog{box-sizing:border-box;width:min(720px,calc(100% - 32px));max-height:calc(100% - 32px);padding:0;border:1px solid #ddd;border-radius:8px;background:#fff;color:#000;overflow:auto}
+.certificate-dialog::backdrop{background:rgba(0,0,0,.7)}
+.certificate-dialog-bar{position:sticky;top:0;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 14px;background:#fff;border-bottom:1px solid #ddd}
+.certificate-dialog-bar button{font:inherit;padding:5px 10px;cursor:pointer}
+.certificate-dialog img{display:block;width:100%;height:auto}
+</style>
 </head>
 <body>
 <p class="updated">Last updated in Nov, 2026</p>
@@ -101,7 +111,35 @@ September 2025: BUS 330, Principles of Finance</p>
 </section>
 <section id="certifications" class="text-section">
 <h2>Certifications</h2><hr>
+<div class="certification-row">
+<a class="certificate-preview" id="certificate-preview" href="images/investment-manager-certificate.webp" aria-label="Enlarge the Certified Investment Manager certificate">
+<img src="images/investment-manager-certificate.webp" alt="Certified Investment Manager certificate thumbnail" width="1012" height="1432" loading="lazy">
+</a>
 <p><b>Certified Investment Manager</b> (투자자산운용사)</p>
+</div>
+<dialog class="certificate-dialog" id="certificate-dialog" aria-labelledby="certificate-dialog-title">
+<div class="certificate-dialog-bar">
+<strong id="certificate-dialog-title">Certified Investment Manager</strong>
+<form method="dialog"><button type="submit" autofocus>Close</button></form>
+</div>
+<img src="images/investment-manager-certificate.webp" alt="Certified Investment Manager certificate issued by the Korea Financial Investment Association, with personal identifiers redacted" width="1012" height="1432" loading="lazy">
+</dialog>
+<script>
+(() => {
+  const preview = document.getElementById('certificate-preview');
+  const dialog = document.getElementById('certificate-dialog');
+  if (typeof dialog.showModal !== 'function') {
+    dialog.hidden = true;
+    return;
+  }
+  preview.setAttribute('aria-haspopup', 'dialog');
+  preview.addEventListener('click', (event) => {
+    if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+    event.preventDefault();
+    dialog.showModal();
+  });
+})();
+</script>
 </section>
 <section id="about">
 <div class="section-heading about-heading"><h2>About Me</h2><hr></div>
