@@ -8,8 +8,9 @@ a:focus-visible{outline:2px solid #1772d0;outline-offset:3px}
 main,.updated{width:100%;max-width:800px;margin-left:auto;margin-right:auto}
 .updated{box-sizing:border-box;font-size:small;padding-left:20px}
 .profile{display:table;width:100%;table-layout:fixed;border-spacing:0;border-collapse:separate}
-.intro,.photo-cell{display:table-cell;padding:2.5%;vertical-align:middle}
-.intro{width:56%}.photo-cell{width:34%;text-align:center}
+/* Match the reference header: 63% introduction, 37% portrait, including padding. */
+.intro,.photo-cell{display:table-cell;box-sizing:border-box;padding:2.5%;vertical-align:middle}
+.intro{width:63%}.photo-cell{width:37%;text-align:center}
 h1{padding-top:20px;margin:0;font-size:32px;font-weight:400;text-align:center}
 .identity,.profile-links{text-align:center}
 .bio{text-align:justify}
